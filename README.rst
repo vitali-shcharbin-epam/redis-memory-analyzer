@@ -32,7 +32,16 @@ To install from source :
 
     git clone https://github.com/gamenet/redis-memory-analyzer
     cd redis-memory-analyzer
-    sudo python setup.py install
+
+If you have both python 2.7 and python 3 installed, use following command:
+
+::
+    sudo python3 setup.py install
+
+If only python 3 is installed use:
+
+::
+    sudo python3 setup.py install
 
 Running
 -------

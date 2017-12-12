@@ -26,7 +26,7 @@ def map_part_to_glob(index, part):
 
 
 class SimpleSplitter(object):
-    def split(self, data, separator=":"):
+    def split(self, data, separator="_"):
         pass1 = map(lambda x: list(map_part_to_glob(i, y) for i, y in enumerate(x.split(separator))), data)
         pass2 = self.fold_to_tree(pass1)
         return self.unfold_to_list(pass2, separator)
